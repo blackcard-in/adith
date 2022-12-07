@@ -1,11 +1,6 @@
 /* Style Settings */
 
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
-
-html {
-   -webkit-tap-highlight-color: transparent;
-}
-
 :root {
     --font: 'Karla', 'Karla', sans-serif;
 }
@@ -35,49 +30,36 @@ body {
 }
 
 #links {
-    width: 80%;
+    max-width: 675px;
+    width: auto;
     display: block;
-    margin: 20px auto;
-    background-color: transparent;
-    padding-top: 10%;
- 
- 
+    margin: 27px auto;
 }
 
 .link {
     display: block;
-    background-color: #5e42ff;
+    background-color: rgb(66, 110, 255);
     color: #fff;
     font-family: var(--font);
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     padding: 17px;
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
     transition: all .25s cubic-bezier(.08, .59, .29, .99);
-    border: solid #5e42ff 2px;
+    border: solid var(--accentColor) 2px;
 }
 
 .link:hover {
     background-color: #fff;
-    color: #5e42ff;
-    border: solid #5e42ff 2px;
+    color: rgb(66, 110, 255);
+    border: solid rgb(66, 110, 255) 2px;
 }
 
 .footer {
     text-align: center;
     font-size: 1.3rem;
-    position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   height: 1%;
-
-   text-align: center;
-   background-color: transparent;
-   background: #5e42ff;
-  
 }
 
 .footer a {
