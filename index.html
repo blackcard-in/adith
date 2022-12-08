@@ -1,18 +1,198 @@
 <!DOCTYPE html>
 
-<html>
-
+<html lang="en">
+ 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <title>BlackCard | Adhi.6.7</title>
+  <meta charset="UTF-8">
+    <meta name="robots" content="noindex,nofollow" /> 
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta property="og:site_name" content="BLACKDAY PROFILE">
+    <meta property="og:title" content="PEACE."/>
+    <meta property="og:description" content="BLACKDAY">
+    <meta property="og:image" itemprop="image" content="profile.jpg">
+    <meta property="og:type" content="website"/>
+    <meta property="og:updated_time" content="1440432930"/>
+       
+    <title>Peace.</title>                                                                   
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon" />
-    <script type="text/javascript" src="fonts/js/script.js"></script>
-</head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    
+    
+    <style>
+  
+  /* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer{
+  position: absolute;
+  width: 250px;
+  height: 50%;
+  background: none;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-<h1 align="center">Under Maintenance!!</h1>
-</body>
+}
 
-</html>
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
+  position: absolute;
+  
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: black;
+  color: white;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #000000;
+  color: white;
+  text-align: right;
+  transform: rotateY(180deg);
+  
+}
+
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thelogo {
+  padding-bottom: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.thefront p {
+  font-family: 'zilla slab', sans-serif;
+  
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}
+/*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+ .thefront h2 {
+   text-align: center;
+ }
+ 
+  .theback h2 {
+    text-align: center;
+    padding-top: 60%;
+    padding-bottom: 65%;
+  }
+  
+ .thelogo2 {
+ padding-right: 10%;
+  width: 23%;
+  height: 8%;
+}
+  </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>BlackCard</h1>
+      </div>
+  
+ 
+ 
+
+  
+<!--dark & light -->
+
+  <script>
+   function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+   </script>
+
+  
+  
+   <div class="maincontainer">
+
+      <div class="thecard">
+       <div class="thefront">
+<img src="11.png" class="thelogo">
+<h2>BlackCard.</h2>
+<p>Tap Card Edge to flip</p>
+        </div>
+      
+        
+        <div class="theback"><h2>Just tap it.</h2>
+        <img src="12.png" class="thelogo2">
+        </div>
+
+</div>
+      </div>
+    
+  
+      <div class="footer">
+  <h4>AVAILABILITY: IN STOCK</h4>
+  <h4>COLOUR: BLACK</h4>
+
+      
+      <!---link & redirecting button -->
+      <div class="links">
+       <a class="link" href="https://wa.me/+916282943771?text=Hello,%20I%20want%20this%20card%20"  rel="noopener">BUYNOW</a>
+     
+      </div>
+
+  <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "107500928564236");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+      </div>
+    </body>
+  </html>
