@@ -7,8 +7,8 @@ RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteCond %{REQUEST_URI} !/$
 RewriteRule (.*) $1\.php [L]
 
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+dirname/([^\s]+) [NC]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+cards/([^\s]+) [NC]
 RewriteRule ^ %1 [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule (?!^dirname/)^(.*)$ /dirname/$1 [L,NC]
+RewriteRule (?!^cards/)^(.*)$ /cards/$1 [L,NC]
