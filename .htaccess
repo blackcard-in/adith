@@ -1,6 +1,6 @@
 RewriteEngine On
  RewriteBase /
- RewriteRule ^adith2 - [L] 
+ RewriteRule ^adith - [L] 
  #ignore folder2 in which I put important files, but no works for the website
  RewriteCond %{REQUEST_URI} !^/adith(.*)
  RewriteRule (.*) /adith/$1
